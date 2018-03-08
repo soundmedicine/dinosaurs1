@@ -26,13 +26,13 @@ export default class AddJob extends Component {
     render() {
         return (
             <form action="submit" className="job-form">
-                <label htmlFor="input" name="title" onChange={this.handleChange}>Title</label>
-                <input type="text"/>
-                <label htmlFor="input" name="pay">Compensation</label>
-                <input type="text"/>
-                <label htmlFor="input" name="description">Description</label>
-                <textarea name="description" id="" cols="30" rows="10"></textarea>
-                <button type="submit" onClick={this.handleSubmit}>Submit</button>
+                <label htmlFor="title">Title</label>
+                <input type="text" name="title" onChange={this.handleChange}/>
+                <label htmlFor="pay">Compensation</label>
+                <input type="text" name="pay" onChange={this.handleChange}/>
+                <label htmlFor="description" name="description" onChange={this.handleChange}>Description</label>
+                <textarea name="description" onChange={this.handleChange} id="" cols="30" rows="10"></textarea>
+                <input type="submit" name="submit" value="Submit" onClick={this.handleSubmit}></input>
                 </form>
                 
         )

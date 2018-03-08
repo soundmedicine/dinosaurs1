@@ -22,11 +22,13 @@ class JobList extends Component {
 
     render() {
         let jobs = this.state.jobs || {interested: []}
+        
         return (
             <main>
                 <section>
                     <ul className='jobs' id='job-listings'>
                     {jobs.map(job => {
+                        job.interested = job.interested || []
                         return <li>
                                 <h4>{job.title}</h4>
                                 <small>{job.pay}</small>
