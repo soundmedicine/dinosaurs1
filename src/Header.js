@@ -4,9 +4,9 @@ import logo from './assets/g-dino.png'
 class Header extends Component {
     render() {
         return (
-            <div className="header">
+            <header className="header">
                 <img src={logo} className="App-logo" alt="logo" />
-                </div>
+                </header>
         )
     }
 }
